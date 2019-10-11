@@ -1,4 +1,26 @@
 @font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.eot);
+  src:
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff2) format("woff2"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.woff) format("woff"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.ttf) format("truetype"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url("https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-brands-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.svg#fontawesome") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+}
+
+@font-face {
   font-family: "Norse";
   src: url("/fonts/Norse.otf");
 }
@@ -12,44 +34,59 @@ p {
   letter-spacing: 0.2px;
   line-height: 1.88rem;
 }
+
+a {
+  text-decoration: none;
+}
+nav >div:last-of-type{
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
 .gray {
   background: #f3f3f3;
 }
-.shadow-1{
-    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
+
+.shadow-1 {
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
 }
-.white{
-    background: #fff;
+
+.white {
+  background: #fff;
+}
+.logo{
+    min-width: 253px;
 }
 .logo img {
   height: 70px;
 }
 
 .logo h3 {
-  font: 32px "Norse", Arial;
+  font: 32px "Norse", Arial, sans-serif;
   letter-spacing: 0.4px;
   color: #cc9543;
+  width: max-content;
+  word-break: unset;
+  flex-shrink: 0;
 }
 
 nav.container-m {
   padding: 0 168px;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
 }
 
 nav ul {
   margin-left: auto;
 }
 
-nav ul li{
-}
-
 nav ul li a {
-  text-decoration: none;
-  font: 16px "Open Sans", sans-serif;
+  font-size: 16px;
   color: rgba(74, 74, 74, 0.7);
 }
 
 nav ul li:nth-child(5) a {
-  font: 24px "Open Sans", sans-serif;
+  font-size: 24px;
   line-height: 24px;
 }
 
@@ -63,18 +100,16 @@ h1 {
 .start p {
   font: 18px/33.8333px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  margin-top: 30px;
 }
 
 .start a {
   padding: 0 56px;
-  text-decoration: none;
+  border-radius: 3.2px;
   color: #fff;
   background-color: #6abfc3;
-  font: 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.start article {
-  height: ;
+  font: 16px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 70px 0 60px;
 }
 
 h2 {
@@ -83,15 +118,16 @@ h2 {
   letter-spacing: 0.3px;
 }
 
-.how-title{
-    max-width: 600px;
-    margin: 0 auto;
+.how-title {
+  max-width: 600px;
+  margin: 0 auto 100px;
 }
+
 .how-it-works img {
   height: 165px;
 }
 
-.how-it-works h4 {
+h4 {
   color: rgb(74, 74, 74);
   font: 18px/21.6px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.2px;
@@ -105,9 +141,158 @@ h2 {
   max-width: 1080px;
 }
 
-.learn h3{
-    color: rgb(74, 74, 74);
-    font-size: 24px;
-    letter-spacing: 0.3px;
-    line-height: 28.8px;
+.learn img {
+  height: 160px;
+  width: 160px;
+}
+.col-8-12{
+    max-width: min-content;
+}
+.col-l-4-12{
+    padding: 0 10px;
+}
+.learn div.shadow-1 {
+  padding: 0 46px;
+  margin: 0 10px 30px;
+}
+
+.learn a {
+  background: #cc9543;
+  color: #fff;
+  padding: 0 56px;
+  border-radius: 3.2px;
+}
+
+.success {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+  padding: 70px 0 80px;
+}
+
+.success img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.success p {
+  line-height: 33.8333px;
+  letter-spacing: 0.2px;
+}
+
+.success h5 a {
+  color: #cc9543;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.success div article {
+  padding: 36px 10px;
+}
+
+.success div > a:first-of-type {
+  text-decoration: underline;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 16px;
+}
+
+.success div > a:last-of-type {
+  color: #fff;
+  font-size: 16px;
+  background: #6abfc3;
+  padding: 0 56px;
+  border-radius: 3.2px;
+}
+
+.success > div:first-of-type {
+  margin: 100px 0 50px;
+}
+.success h6{
+    padding: 80px 0 50px;
+}
+.shadow-2 {
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+  color: rgba(74, 74, 74, 0.7);
+  font: 100 35.2px/52.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+a.icon {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  font-family: "Font Awesome 5 Brands", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #cc9543;
+  line-height: 24px;
+  width: 24px;
+}
+
+a.icon:hover {
+  color: #000;
+}
+
+.git::before {
+  content: "\f09b";
+}
+
+.disccord::before {
+  content: "\f392";
+}
+
+.facebook::before {
+  content: "\f09a";
+}
+
+.twitter::before {
+  content: "\f099";
+}
+
+footer a {
+  color: rgba(74, 74, 74, 0.7);
+  font: 16px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer > article > div:nth-child(1) {
+  flex: 2;
+}
+
+footer > article > div:nth-child(2) {
+  flex: 1;
+}
+
+footer > article > div:nth-child(3) {
+  flex: 2;
+}
+
+footer .logo h3 {
+  font-size: 25.6px;
+}
+
+footer .logo img {
+  height: 70px;
+}
+
+footer.container-m {
+  height: 277px;
+  padding: 80px 30px;
+}
+
+.start {
+  margin-top: 50px;
+}
+
+.start article:last-of-type {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.learn {
+  padding: 60px 0 60px;
+}
+
+.learn > div {
+  margin-top: 60px;
 }
