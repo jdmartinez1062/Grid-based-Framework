@@ -145,12 +145,7 @@ h4 {
   height: 160px;
   width: 160px;
 }
-.col-8-12{
-    max-width: min-content;
-}
-.col-l-4-12{
-    padding: 0 10px;
-}
+
 .learn div.shadow-1 {
   padding: 0 46px;
   margin: 0 10px 30px;
