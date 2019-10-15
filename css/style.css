@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+.notshow {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .gray {
   background: #f3f3f3;
 }
