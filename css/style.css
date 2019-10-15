@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.eot);
+  src:
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff2) format("woff2"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.woff) format("woff"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.ttf) format("truetype"),
+    url(https://use.fontawesome.com/releases/v5.7.2/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url("https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-brands-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.7.2/fa-brands-400.svg#fontawesome") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("/fonts/Norse.otf");
+}
+
+* {
+  font: 1.125rem "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li {
+  font: 1.125rem "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  color: rgba(74, 74, 74, 0.7);
+  letter-spacing: 0.2px;
+  line-height: 1.88rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.notshow {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.gray {
+  background: #f3f3f3;
+}
+
+.shadow-1 {
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+}
+
+.white {
+  background: #fff;
+}
+
+.logo {
+  min-width: 253px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.logo h3 {
+  font: 32px "Norse", Arial, sans-serif;
+  letter-spacing: 0.4px;
+  color: #cc9543;
+  width: max-content;
+  word-break: unset;
+  flex-shrink: 0;
+}
+
+nav.container-m {
+  padding: 0 168px;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+footer a {
+  color: rgba(74, 74, 74, 0.7);
+  font: 16px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+.start a {
+  padding: 0 56px;
+  border-radius: 3.2px;
+  color: #fff;
+  background-color: #6abfc3;
+  font: 16px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 70px 0 60px;
+}
+
+.learn a {
+  background: #cc9543;
+  color: #fff;
+  padding: 0 56px;
+  border-radius: 3.2px;
+}
+
+.mobile-appear a {
+  font-size: 21.25px;
+  letter-spacing: 1.0625px;
+  line-height: 21.25px;
+  color: #cc9543;
+}
+
+.success h5 a {
+  color: #cc9543;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+nav ul li:nth-child(5) a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h1 {
+  color: rgb(206, 151, 62);
+  font: 36px/43.2px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.start p {
+  font: 18px/33.8333px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  color: rgb(74, 74, 74);
+  font: 24px/28.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.how-title {
+  max-width: 600px;
+  margin: 0 auto 100px;
+}
+
+.learn > div {
+  margin-top: 60px;
+}
+
+nav > div:nth-of-type(2) {
+  display: flex;
+  flex: 1 0;
+}
+
+footer > article > div:nth-child(1) {
+  display: flex;
+  flex: 2;
+}
+
+footer > article > div:nth-child(2) {
+  flex: 1;
+  flex-shrink: 2;
+}
+
+footer > article > div:nth-child(3) {
+  flex: 2;
+}
+
+.success > div:first-of-type {
+  margin: 100px 0 50px;
+}
+
+.how-it-works article > div:first-of-type {
+  height: max-content;
+}
+
+h4 {
+  color: rgb(74, 74, 74);
+  font: 18px/21.6px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.how-it-works article {
+  padding-bottom: 30px;
+}
+
+.how-it-works img {
+  height: 165px;
+}
+
+.how-it-works h4 {
+  padding-top: 50px;
+}
+
+.how-it-works p {
+  letter-spacing: 0.2px;
+}
+
+.how-it-works {
+  max-width: 1080px;
+}
+
+.learn img {
+  height: 160px;
+  width: 160px;
+}
+
+.learn div.shadow-1 {
+  padding: 0 46px;
+  margin-bottom: 30px;
+}
+
+.success {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+  padding: 70px 0 80px;
+}
+
+.success img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.success p {
+  line-height: 33.8333px;
+  letter-spacing: 0.2px;
+}
+
+.success div article {
+  padding: 36px 10px;
+}
+
+.icon-h a:nth-child(1) {
+  z-index: 3;
+  order: 3;
+}
+
+.icon-h a:nth-child(2) {
+  z-index: 2;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 0.5s;
+  order: 2;
+}
+
+.icon-h a:nth-child(3) {
+  z-index: 1;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 0.5s;
+  order: 1;
+}
+
+.success div > a:first-of-type {
+  text-decoration: underline;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 16px;
+}
+
+.success div > a:last-of-type {
+  color: #fff;
+  font-size: 16px;
+  background: #6abfc3;
+  padding: 0 56px;
+  border-radius: 3.2px;
+}
+
+h6 {
+  color: rgba(74, 74, 74, 0.7);
+  font: 100 35.2px/52.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.success h6 {
+  padding: 80px 0 50px;
+}
+
+.shadow-2 {
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+}
+
+a.icon {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  font-family: "Font Awesome 5 Brands", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #cc9543;
+  line-height: 24px;
+  width: 24px;
+}
+
+a.icon:hover {
+  color: #000;
+}
+
+.git::before {
+  content: "\f09b";
+}
+
+.disccord::before {
+  content: "\f392";
+}
+
+.facebook::before {
+  content: "\f09a";
+}
+
+.twitter::before {
+  content: "\f099";
+}
+
+footer .logo h3 {
+  font-size: 25.6px;
+}
+
+footer .logo img {
+  height: 70px;
+}
+
+footer.container-m {
+  height: 277px;
+  padding: 80px 30px;
+}
+
+.start {
+  margin-top: 50px;
+}
+
+.start > article:last-of-type {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.learn {
+  padding: 60px 0 60px;
+}
+
+.learn .col-8-12 {
+  max-width: 847px;
+  flex-shrink: 0;
+}
+
+.learn .col-s-4-12 {
+  min-width: max-content;
+  padding: 0 15px;
+}
+
+ul.icon li {
+  flex: 1;
+}
+
+a.block {
+  width: max-content;
+}
+
+div.icon-h {
+  bottom: 20px;
+  right: 20px;
+}
+
+a.icon-h {
+  background: #6abfc3;
+  border-radius: 50%;
+}
+
+i.icon {
+  font-size: 32px;
+  text-align: center;
+  display: block;
+  font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #fff;
+  width: max-content;
+}
+
+.translate-foot-mob a.icon-h:nth-child(2) {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+
+.translate-foot-mob a.icon-h:nth-child(3) {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+a i.icon-1 {
+  line-height: 66px;
+  width: 68px;
+}
+
+i.icon-1::before {
+  content: "\f086";
+}
+
+a i.icon-2 {
+  font-size: 1.2em;
+}
+
+i.icon-2::before {
+  content: "\f0c0";
+}
+
+a i.icon-3 {
+  font-size: 1.2em;
+}
+
+i.icon-3::before {
+  content: "\f075";
+}
+
+.menu-menu-a {
+  z-index: 100;
+}
+
+.mobile-appear {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  z-index: 10;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform ease-in-out 1s, opacity 1s;
+}
+
+.translate-nav-mob .mobile-appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-appear ul:last-of-type {
+  border-top: 2px solid #cc9543;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu span {
+  width: 30px;
+  height: 2px;
+  background: #6abfc3;
+  display: block;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .special {
+    width: 100%;
+    height: 94px;
+  }
+
+  nav > div:nth-of-type(2) {
+    display: none;
+  }
+
+  nav > div:last-of-type {
+    flex: 1;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  footer > article > div:nth-child(1) {
+    display: none;
+  }
+
+  footer > article > div:nth-child(2) {
+    flex: 1;
+  }
+
+  footer > article > div:nth-child(3) {
+    flex: 1;
+  }
+
+  nav.container-m {
+    padding: 0 30px;
+  }
+}

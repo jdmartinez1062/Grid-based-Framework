@@ -1,0 +1,15 @@
+div {
+  min-height: 200px;
+}
+
+.heat-1 {
+  background: rgb(75, 75, 75);
+}
+
+.heat-2 {
+  background: rgb(119, 119, 119);
+}
+
+.heat-3 {
+  background: rgb(201, 201, 201);
+}
