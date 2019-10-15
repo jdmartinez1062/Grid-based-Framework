@@ -496,8 +496,8 @@ i.icon-3::before {
   footer > article > div:nth-child(3) {
     flex: 1;
   }
-  nav.container-m{
+
+  nav.container-m {
     padding: 0 30px;
   }
 }
-
