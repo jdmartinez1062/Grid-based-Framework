@@ -51,7 +51,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://rawcdn.githack.com/jdmartinez1062/Grid-based-Framework/86278d5883f4d9464dc45b5e785f81a08bcaabe1/index.HTML)
 
-[Microverse](https://www.microverse.org/) Eight HTML and CSS Main Curriculum Project "Design Your Own Grid-Based Framework"
+[Microverse](https://www.microverse.org/) Eighth HTML and CSS Main Curriculum Project "Design Your Own Grid-Based Framework"
 
 Design Your Own Grid-Based Framework. [Assignment link](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
