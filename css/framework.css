@@ -206,7 +206,6 @@ h6 {
 .col-11-12,
 .col-12-12 .col-1-12 {
   display: flex;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 
@@ -283,7 +282,6 @@ h6 {
 .col-l-11-12,
 .col-l-12-12 .col-l-1-12 {
   display: flex;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 
@@ -360,7 +358,6 @@ h6 {
 .col-m-11-12,
 .col-m-12-12 .col-m-1-12 {
   display: flex;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 
@@ -437,7 +434,6 @@ h6 {
 .col-s-11-12,
 .col-s-12-12 .col-s-1-12 {
   display: flex;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 
@@ -495,15 +491,19 @@ h6 {
   max-width: 100%;
   flex-basis: 100%;
 }
-.inline-block{
+
+.inline-block {
   display: inline-block !important;
 }
+
 .block {
   display: block !important;
 }
-.grow{
+
+.grow {
   flex-grow: 1;
 }
+
 .flex {
   display: flex !important;
 }
@@ -595,7 +595,6 @@ h6 {
 .p-10 {
   padding: 5rem !important;
 }
-
 
 .px-0 {
   padding-left: 0 !important;
@@ -1225,6 +1224,22 @@ h6 {
   font-weight: 300 !important;
 }
 
+.auto-m {
+  margin: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
 @media screen and (max-width: 1024px) {
   .col-m-1-12,
   .col-m-2-12,
@@ -1263,5 +1278,6 @@ h6 {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 100% !important;
+    max-width: 100%;
   }
 }
